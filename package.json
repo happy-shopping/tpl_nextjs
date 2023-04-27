@@ -4,12 +4,10 @@
   "private": true,
   "scripts": {
     "dev": " chmod 777 ./src/commons/scripts/setHttps.sh && ./src/commons/scripts/setHttps.sh && env-cmd -f .env.loc next dev",
-
     "build:loc": "env-cmd -f .env.loc next build",
     "build:dev": "env-cmd -f .env.dev next build",
     "build:main": "env-cmd -f .env.main next build",
-    "build:all" : "yarn build:loc && yarn build:dev && yarn build:main",
-
+    "build:all": "yarn build:loc && yarn build:dev && yarn build:main",
     "start:loc": "env-cmd -f .env.loc next start",
     "start:dev": "env-cmd -f .env.dev next start",
     "start:main": "env-cmd -f .env.main next start",
@@ -27,5 +25,15 @@
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.8"
+  }
 }
