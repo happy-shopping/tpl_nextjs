@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": " chmod 777 ./src/commons/scripts/setHttps.sh && ./src/commons/scripts/setHttps.sh && env-cmd -f .env.loc next dev",
+
+    "build:loc": "env-cmd -f .env.loc next build",
+    "build:dev": "env-cmd -f .env.dev next build",
+    "build:main": "env-cmd -f .env.main next build",
+    "build:all" : "yarn build:loc && yarn build:dev && yarn build:main",
+
+    "start:loc": "env-cmd -f .env.loc next start",
+    "start:dev": "env-cmd -f .env.dev next start",
+    "start:main": "env-cmd -f .env.main next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "18.16.1",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
+    "env-cmd": "^10.1.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "next": "13.3.1",
