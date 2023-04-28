@@ -1,8 +1,9 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/dayjs": "pages/dayjs.html",
   "/_document": "pages/_document.js",
+  "/axios": "pages/axios.html",
+  "/dayjs": "pages/dayjs.html",
   "/": "pages/index.html",
   "/404": "pages/404.html"
 }
