@@ -1,9 +1,10 @@
 {
   "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/axios": "pages/axios.html",
-  "/_document": "pages/_document.js",
   "/dayjs": "pages/dayjs.html",
+  "/counter": "pages/counter.html",
   "/": "pages/index.html",
   "/react-query": "pages/react-query.html",
   "/styles": "pages/styles.html",
