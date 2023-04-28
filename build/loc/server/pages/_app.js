@@ -5,24 +5,71 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 199:
+/***/ 9212:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_globalStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6464);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7518);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_theme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1278);
+/* harmony import */ var _tanstack_query_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6929);
+/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9752);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_tanstack_query_core__WEBPACK_IMPORTED_MODULE_4__, _tanstack_react_query__WEBPACK_IMPORTED_MODULE_5__]);
+([_tanstack_query_core__WEBPACK_IMPORTED_MODULE_4__, _tanstack_react_query__WEBPACK_IMPORTED_MODULE_5__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
+
+
+
+function App({ Component , pageProps  }) {
+    const queryClient = new _tanstack_query_core__WEBPACK_IMPORTED_MODULE_4__.QueryClient({
+        defaultOptions: {
+            queries: {
+                refetchOnWindowFocus: false
+            }
+        }
+    });
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_5__.QueryClientProvider, {
+        client: queryClient,
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(styled_components__WEBPACK_IMPORTED_MODULE_2__.ThemeProvider, {
+            theme: _styles_theme__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z,
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_styles_globalStyles__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {}),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
+                    ...pageProps
+                })
+            ]
+        })
+    });
+}
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 6464:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ App)
+  "Z": () => (/* binding */ globalStyles)
 });
 
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
 ;// CONCATENATED MODULE: external "styled-reset"
 const external_styled_reset_namespaceObject = require("styled-reset");
 var external_styled_reset_default = /*#__PURE__*/__webpack_require__.n(external_styled_reset_namespaceObject);
 // EXTERNAL MODULE: external "styled-components"
-var external_styled_components_ = __webpack_require__(518);
+var external_styled_components_ = __webpack_require__(7518);
 ;// CONCATENATED MODULE: ./src/styles/globalStyles.ts
 
 
@@ -47,7 +94,15 @@ var external_styled_components_ = __webpack_require__(518);
   }
 `);
 
-;// CONCATENATED MODULE: ./src/styles/theme.ts
+
+/***/ }),
+
+/***/ 1278:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 const colors = {
     black: "#333333",
     yellow: "#FF9900",
@@ -65,24 +120,7 @@ const theme = {
     colors,
     fonts
 };
-/* harmony default export */ const styles_theme = (theme);
-
-;// CONCATENATED MODULE: ./src/pages/_app.tsx
-
-
-
-
-function App({ Component , pageProps  }) {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_styled_components_.ThemeProvider, {
-        theme: styles_theme,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(globalStyles, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(Component, {
-                ...pageProps
-            })
-        ]
-    });
-}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (theme);
 
 
 /***/ }),
@@ -94,10 +132,24 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ 518:
+/***/ 7518:
 /***/ ((module) => {
 
 module.exports = require("styled-components");
+
+/***/ }),
+
+/***/ 6929:
+/***/ ((module) => {
+
+module.exports = import("@tanstack/query-core");;
+
+/***/ }),
+
+/***/ 9752:
+/***/ ((module) => {
+
+module.exports = import("@tanstack/react-query");;
 
 /***/ })
 
@@ -108,7 +160,7 @@ module.exports = require("styled-components");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(199));
+var __webpack_exports__ = (__webpack_exec__(9212));
 module.exports = __webpack_exports__;
 
 })();

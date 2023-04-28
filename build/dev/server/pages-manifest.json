@@ -4,7 +4,8 @@
   "/_document": "pages/_document.js",
   "/axios": "pages/axios.html",
   "/dayjs": "pages/dayjs.html",
-  "/styles": "pages/styles.html",
   "/": "pages/index.html",
+  "/react-query": "pages/react-query.html",
+  "/styles": "pages/styles.html",
   "/404": "pages/404.html"
 }
