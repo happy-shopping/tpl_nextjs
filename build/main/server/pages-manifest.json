@@ -5,5 +5,6 @@
   "/axios": "pages/axios.html",
   "/dayjs": "pages/dayjs.html",
   "/": "pages/index.html",
+  "/styles": "pages/styles.html",
   "/404": "pages/404.html"
 }
