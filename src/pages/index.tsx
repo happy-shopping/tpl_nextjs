@@ -16,6 +16,9 @@ export default function Home() {
       <li>
         <Link href="/react-query">react-query 예제 페이지</Link>
       </li>
+      <li>
+        <Link href="/counter">Redux counter 예제 페이지</Link>
+      </li>
     </main>
   );
 }
