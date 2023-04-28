@@ -10,6 +10,9 @@ export default function Home() {
       <li>
         <Link href="/axios">axios 페이지</Link>
       </li>
+      <li>
+        <Link href="/styles">styled-component theme 페이지</Link>
+      </li>
     </main>
   );
 }
