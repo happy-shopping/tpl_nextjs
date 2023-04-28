@@ -32,7 +32,8 @@
       "react/jsx-props-no-spreading": 0,
       "import/no-extraneous-dependencies": "off",
       "no-param-reassign": [
-        "error", { "props": false }]
+        "error", { "props": false }],
+      "no-console": ["error", { "allow": ["warn", "error","info"] }]
     },
   "settings": {
     "import/resolver": {
