@@ -2,11 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/axios": "pages/axios.html",
-  "/dayjs": "pages/dayjs.html",
-  "/counter": "pages/counter.html",
-  "/": "pages/index.html",
-  "/react-query": "pages/react-query.html",
-  "/styles": "pages/styles.html",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/dayjs": "pages/dayjs.js",
+  "/axios": "pages/axios.js",
+  "/react-query": "pages/react-query.js",
+  "/styles": "pages/styles.js",
+  "/counter": "pages/counter.js"
 }
