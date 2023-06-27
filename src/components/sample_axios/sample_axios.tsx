@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react"
 import { APILISTS } from "@/api"
 import { IListItem } from "@/interfaces"
+import { AxiosResponse } from "axios"
 
 export default function SampleAxios() {
-  const [isListData, setIsListData] = useState([])
+  const [isListData, setIsListData] = useState<any[]>([])
   useEffect(() => {
-    APILISTS.fetchItemList().then((res) => {
-      setIsListData(res.data.result.items)
-    })
+    APILISTS.fetchItemList()
+      .then((res: AxiosResponse<any>): void => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        const items = res.data?.result?.items as any[]
+        setIsListData(items)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }, [])
 
   return (
