@@ -4,6 +4,7 @@
   "/_document": "pages/_document.js",
   "/axios": "pages/axios.html",
   "/counter": "pages/counter.html",
+  "/dayjs": "pages/dayjs.html",
   "/": "pages/index.html",
   "/react-query": "pages/react-query.html",
   "/404": "pages/404.html"
