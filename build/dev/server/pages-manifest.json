@@ -2,8 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/axios": "pages/axios.html",
-  "/": "pages/index.html",
+  "/counter": "pages/counter.html",
   "/_document": "pages/_document.js",
+  "/": "pages/index.html",
   "/react-query": "pages/react-query.html",
   "/404": "pages/404.html"
 }

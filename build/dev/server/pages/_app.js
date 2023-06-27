@@ -75,11 +75,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ App)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5893);
-/* harmony import */ var _styles_globalStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2795);
+/* harmony import */ var _styles_globalStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6464);
 /* harmony import */ var _tanstack_query_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6929);
 /* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9752);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6022);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9224);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_tanstack_query_core__WEBPACK_IMPORTED_MODULE_2__, _tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__]);
 ([_tanstack_query_core__WEBPACK_IMPORTED_MODULE_2__, _tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
 
 
 
@@ -92,14 +97,17 @@ function App({ Component, pageProps }) {
             }
         }
     });
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__.QueryClientProvider, {
-        client: queryClient,
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_styles_globalStyles__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {}),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-                ...pageProps
-            })
-        ]
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_redux__WEBPACK_IMPORTED_MODULE_4__.Provider, {
+        store: _store__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z,
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__.QueryClientProvider, {
+            client: queryClient,
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_styles_globalStyles__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {}),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
+                    ...pageProps
+                })
+            ]
+        })
     });
 }
 
@@ -108,7 +116,56 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 2795:
+/***/ 9224:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5184);
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _reducer_counter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7184);
+
+
+const store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.configureStore)({
+    reducer: {
+        counter: _reducer_counter__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z
+    },
+    devTools: "production" !== "production"
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);
+
+
+/***/ }),
+
+/***/ 7184:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   k: () => (/* binding */ setCount)
+/* harmony export */ });
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5184);
+/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);
+
+const slice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.createSlice)({
+    name: "counter",
+    initialState: {
+        count: 0
+    },
+    reducers: {
+        setCount: (state, action)=>{
+            state.count = action.payload;
+        }
+    }
+});
+const { setCount } = slice.actions;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slice.reducer);
+
+
+/***/ }),
+
+/***/ 6464:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -120,12 +177,12 @@ __webpack_require__.d(__webpack_exports__, {
 ;// CONCATENATED MODULE: external "styled-reset"
 const external_styled_reset_namespaceObject = require("styled-reset");
 var external_styled_reset_default = /*#__PURE__*/__webpack_require__.n(external_styled_reset_namespaceObject);
-;// CONCATENATED MODULE: external "styled-components"
-const external_styled_components_namespaceObject = require("styled-components");
+// EXTERNAL MODULE: external "styled-components"
+var external_styled_components_ = __webpack_require__(7518);
 ;// CONCATENATED MODULE: ./src/styles/globalStyles.ts
 
 
-/* harmony default export */ const globalStyles = (external_styled_components_namespaceObject.createGlobalStyle`
+/* harmony default export */ const globalStyles = (external_styled_components_.createGlobalStyle`
   ${(external_styled_reset_default())}
   
     *, *::before, *::after {
@@ -149,6 +206,13 @@ const external_styled_components_namespaceObject = require("styled-components");
 
 /***/ }),
 
+/***/ 5184:
+/***/ ((module) => {
+
+module.exports = require("@reduxjs/toolkit");
+
+/***/ }),
+
 /***/ 3076:
 /***/ ((module) => {
 
@@ -167,6 +231,20 @@ module.exports = require("next/dist/server/render.js");
 /***/ ((module) => {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ 6022:
+/***/ ((module) => {
+
+module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ 7518:
+/***/ ((module) => {
+
+module.exports = require("styled-components");
 
 /***/ }),
 
