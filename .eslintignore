@@ -1,0 +1,6 @@
+/config-overrides.js
+/.pnp.cjs
+/.pnp.loader.mjs
+
+# Ignore build output
+build/
