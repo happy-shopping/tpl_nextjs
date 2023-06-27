@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --no-cache --dir src"
+    "lint": "next lint --no-cache --dir src",
+    "prettier": "prettier --write src/**/*.{js,ts,jsx,tsx,json,css}"
   },
   "dependencies": {
     "@types/node": "20.3.2",
@@ -22,6 +23,9 @@
     "@typescript-eslint/parser": "^5.60.1",
     "eslint": "^8.43.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   }
 }

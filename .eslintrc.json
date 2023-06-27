@@ -21,8 +21,12 @@
     "next",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "airbnb-typescript"
+    "airbnb-typescript",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint"],
-  "rules": {}
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
