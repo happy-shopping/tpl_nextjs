@@ -11,7 +11,7 @@
     "start:loc": "dotenv -e .env.loc next start",
     "start:dev": "dotenv -e .env.dev next start",
     "start:main": "dotenv -e .env.main next start",
-    "lint": "next lint --no-cache --dir src",
+    "lint": "next lint --no-cache",
     "prettier": "prettier --write src/**/*.{js,ts,jsx,tsx,json,css}"
   },
   "dependencies": {
@@ -22,9 +22,12 @@
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.0-rc.6",
+    "styled-reset": "^4.4.7"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "dotenv": "^16.3.1",
